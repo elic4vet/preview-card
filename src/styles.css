@@ -1,0 +1,63 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /*Colors */
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /*par*/
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /*bg*/
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  /*Typography */
+
+  --title-ffamily: "Big Shoulders Display", cursive;
+  --main-ffamily: "Lexend Deca", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bright-orange);
+}
+
+.col2 {
+  background-color: var(--dark-cyan);
+}
+
+.col3 {
+  background-color: var(--very-dark-cyan);
+}
+
+.attribution {
+  margin-top: 20px;
+}
