@@ -66,6 +66,7 @@ p {
   width: 250px;
   height: 100%;
   padding: 40px;
+  padding-bottom: 40px;
 }
 
 .col1 {
@@ -99,16 +100,15 @@ p {
 }
 
 .btn-primary {
-  position: absolute;
-  top: 45%;
-
-  padding: 10px 30px 10px 30px;
-  border-radius: 20px;
-  border: none;
-  background-color: var(--very-light-gray);
+  border: 3px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  width: 70%;
+  height: 50px;
+  border-radius: 25px;
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .btn-primary:hover {
