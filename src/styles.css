@@ -20,8 +20,6 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,12 +33,16 @@ h1 {
   font-weight: 700;
   color: var(--very-light-gray);
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -80px;
 }
 
 p {
   font-size: 12px;
   color: var(--very-light-gray);
+  margin-bottom: 40px;
+  opacity: 0.75;
 }
 
 .container {
@@ -49,21 +51,18 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 250px;
   height: 100%;
   padding: 40px;
@@ -74,23 +73,35 @@ p {
   flex-direction: column;
   align-items: center;
   background-color: var(--bright-orange);
-  border-radius: 10px 0 0 10px;
+  border-radius: 5px 0 0 5px;
 }
 
 .col2 {
   background-color: var(--dark-cyan);
 }
+.col2 h1 {
+  margin-left: -100px;
+}
 
 .col3 {
   background-color: var(--very-dark-cyan);
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 5px 5px 0;
 }
 
 .attribution {
   margin-top: 20px;
 }
 
+.attribution a {
+  color: var(--bright-orange);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 .btn-primary {
+  position: absolute;
+  top: 45%;
+
   padding: 10px 30px 10px 30px;
   border-radius: 20px;
   border: none;
@@ -98,6 +109,13 @@ p {
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border: 2px solid var(--transparent-white);
+  color: white;
+  transition: background-color 0.3s;
 }
 
 .btn1 {
@@ -110,4 +128,8 @@ p {
 
 .btn3 {
   color: var(--very-dark-cyan);
+}
+
+.icon {
+  margin-left: -100px;
 }
