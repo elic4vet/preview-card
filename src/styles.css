@@ -52,12 +52,19 @@ p {
   margin-top: 20px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .col {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 250px;
   height: 100%;
   padding: 40px;
 }
